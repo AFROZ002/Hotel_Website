@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: silver;
+        overflow-x: hidden;
+    }
+
+    .container {
+        background-color: white;
+        width: 100%;
+        height: 70px;
+    }
+
+    ul {
+        display: inline-block;
+        position: relative;
+        bottom: 15px;
+        margin-left: 150px;
+
+    }
+
+    li {
+        display: inline-block;
+        text-decoration: none;
+        margin: 10px;
+        padding: 5px;
+        font-weight: bolder;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    li:hover {
+        background-color: rgba(163, 169, 124, 0.836);
+        border-radius: 20px;
+        translate: 10px 10px 10px;
+        transition: .6s;
+    }
+
+
+    .logo {
+        height: 50px;
+        width: 60px;
+    }
+
+    .img1 {
+        width: 100%;
+        height: 700px;
+    }
+
+    .container3 {
+        width: 315px;
+        height: 50px;
+        background-color: rgba(55, 48, 48, 0.836);
+        position: absolute;
+        bottom: 25px;
+        left: 30px;
+    }
+
+    .para {
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        position: absolute;
+        left: 120px;
+        top: 2px;
+    }
+
+    /* .container4 {
+        margin: 25px;
+        padding: 5px;
+    } */
+    .container99P {
+        margin: 20px;
+
+        /* align-items: center; */
+
+
+    }
+
+
+    .container99 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+    }
+
+    .container5 {
+        position: absolute;
+        left: 350px;
+        bottom: -200px;
+    }
+
+    .container6 {
+        position: relative;
+        left: 650px;
+        bottom: 100px;
+    }
+
+    .container7 {
+        background-color: pink;
+    }
+
+    .container8 {
+        margin: 25px;
+        padding: 5px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .img2 {
+        margin: 25px;
+        padding: 5px;
+        width: 250px;
+        height: 200px;
+    }
+
+    .img3 {
+        margin: 25px;
+        padding: 5px;
+        width: 250;
+        height: 200px;
+    }
+
+    .img4 {
+        margin: 25px;
+        padding: 5px;
+        width: 250px;
+        height: 200px;
+    }
+
+    .para2 {
+        margin: 10px;
+        padding: 5px;
+        font-weight: bolder;
+        position: relative;
+        left: 15px;
+    }
+
+    .para3 {
+        font-weight: bolder;
+        position: relative;
+        left: 430px;
+        bottom: 33px;
+    }
+
+    .para4 {
+        font-weight: bolder;
+        position: relative;
+        bottom: 51px;
+        left: 875px;
+    }
+
+    .container10 {
+        margin: 10px 20px;
+        /* padding: 5px; */
+        position: relative;
+        /* bottom: 60px; */
+    }
+
+    .container11 {
+        margin: 20px;
+        padding: 5px;
+        position: relative;
+        bottom: 142px;
+        left: 317px;
+    }
+
+    .container12 {
+        margin: 20px;
+        padding: 5px;
+        position: relative;
+        bottom: 226px;
+        left: 660px;
+    }
+
+    .btn1 {
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        position: relative;
+        margin-top: 10px;
+        /* left: 25px; */
+        /* bottom: 234px; */
+        width: 115px;
+        height: 35px;
+    }
+
+    .btn2 {
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        position: relative;
+        left: 310px;
+        bottom: 234px;
+        width: 115px;
+        height: 35px;
+    }
+
+    .btn3 {
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+        position: relative;
+        left: 585px;
+        bottom: 234px;
+        width: 115px;
+        height: 35px;
+    }
+
+    .fa-whatsapp {
+        color: black;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .fa-brands:hover {
+        background-color: rgba(39, 193, 25, 0.886);
+        border-radius: 20px;
+        translate: 10px 10px 10px;
+        transition: .6s;
+    }
+
+    .fa-facebook {
+        color: black;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .lorimps{
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .lorimpsOne:hover{
+        background-color: rgb(61, 219, 231);
+        border-radius: 20px;
+        translate: 6px -5px 19px;
+        transition: .6s;
+    }
+    .lorimpsOne{
+       
+        height: 450px;
+        width: 380px;
+        margin-bottom: 5px;
+        background-color: rgba(228, 176, 247, 0.3);
+
+        border: solid 4px rgba(55, 48, 48, 0.836);
+        border-radius: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .lorimpsOneImg
+    {
+        margin-top: 10px;
+        margin-left: 15px;
+        width: 350px;
+
+        border: solid 3px rgba(248, 196, 133, 0.836);
+        border-radius: 10px;
+        
+        align-items: center;
+        justify-content: center;
+    }
+    .lorimpsOneHead{
+        margin-left: 150px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .lorimpsOnePara{
+        width: 350px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 10px;
+
+        margin-left: 15px;
+        margin-bottom: 0px;
+        margin-top: 25px;
+        
+        /* background-color: aqua; */
+
+        align-items: center;
+        justify-content: center;
+    }
+    .lorimpsButton{
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+    
+        width: 115px;
+        height: 35px;
+
+        margin-left: 120px;
+        margin-top: 12px;
+    }
+    .lorimpsButton:hover{
+        background-color: rgb(61, 219, 231);
+        border-radius: 20px;
+        translate: 6px 4px 4px;
+        transition: .6s;
+    }
+    .container2 {
+    max-width: 100%; /* Set the maximum width to ensure responsiveness */
+    height: auto; /* Allow the height to adjust accordingly */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.img1 {
+    width: 100%; /* Make the image width 100% of its container */
+    height: auto; /* Allow the height to adjust accordingly */
+    display: block; /* Ensure the image behaves as a block element */
+}
+    @media (max-width: 768px) {
+    .container {
+        height: auto; /* Change height to auto for responsiveness */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    ul {
+        display: block; /* Change display to block for stacking items */
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center align items */
+    }
+
+    li {
+        display: block; /* Change display to block for stacking items */
+        margin: 5px 0; /* Add margin for better spacing between items */
+    }
+
+    .logo {
+        display: block; /* Ensure logo occupies full width */
+        margin: 0 auto; /* Center align logo */
+    }
+
+    .fa-whatsapp,
+    .fa-facebook {
+        display: block; /* Ensure social icons occupy full width */
+        margin: 10px auto; /* Center align social icons */
+    }
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <img class="logo" src="img/logo.jpeg" alt="">
+        <ul>
+            <li>Home</li>
+            <li>Order</li>
+            <li>Food</li>
+            <li>Restaurant</li>
+            <li>Testimonial</li>
+            <li>Contact Us </li>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </ul>
+    </div>
+    <div class="container2" >
+        <img class="img1" src="img/img1.jpeg" alt="">
+    </div>
+    <div class="container3">
+        <p class="para">Lorem ipsum </p>
+    </div>
+    <div class="container99"  style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+<div>
+        <p class="container99P"></p>
+        >
+        <br>Lorem Ipsum is simply dummy text of the<br>
+        printing and typesetting industry. Lorem<br>
+        Ipsum has been the industry's standard<br>
+        dummy text ever since the 1500s<br>
+        </p>
+    </div>
+    <div>
+
+        <p class="container99P">
+            Lorem Ipsum is simply dummy text of the<br>
+            printing and typesetting industry. Lorem<br>
+            Ipsum has been the industry's standard<br>
+            dummy text ever since the 1500s<br>
+        </p>
+    </div>
+    <div>
+
+        <p class="container99P">
+            Lorem Ipsum is simply dummy text of the<br>
+            printing and typesetting industry. Lorem<br>
+            Ipsum has been the industry's standard<br>
+            dummy text ever since the 1500s<br>
+        </p>
+    </div>
+    </div>
+
+    <div class="container7">
+        <div class="container8">
+            <p>Lorem Ipsum</p>
+        </div>
+        <!-- --------------------------------------------------------------------------------------- -->
+        <div class="lorimps" style="display: flex; flex-wrap: wrap;">
+            <div class="lorimpsOne">
+
+                <img class="lorimpsOneImg" src="img/img2.jpeg" alt="">
+
+                <h3 class="lorimpsOneHead">ROOMS</h3>
+
+                <p  class="lorimpsOnePara">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Error aspernatur
+                    iste nisi velit eos gahsjsj zsamsnxcccc mndxn
+                </p>
+                <button class="lorimpsButton">Learn More</button>
+            </div>
+            <div class="lorimpsOne">
+                <img class="lorimpsOneImg" src="img/img3.jpeg" alt="">
+
+                <h3 class="lorimpsOneHead">ROOMS</h3>
+
+                <p  class="lorimpsOnePara">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Error aspernatur
+                    iste nisi velit eos gahsjsj zsamsnxcccc mndxn
+                </p>
+                <button class="lorimpsButton">Learn More</button>
+
+            </div>
+            <div class="lorimpsOne">
+                <img class="lorimpsOneImg" src="img/img5.jpeg" alt="">
+
+                <h3 class="lorimpsOneHead">ROOMS</h3>
+
+                <p  class="lorimpsOnePara">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Error aspernatur
+                    iste nisi velit eos gahsjsj zsamsnxcccc mndxn
+                </p>
+                <button class="lorimpsButton">Learn More</button>
+
+            </div>
+
+
+        </div>
+
+        <!-- ---------------------------- Dlt --------------------------------------------------------------- -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <div>
+            <img class="img2" src="img/img2.jpeg" alt="">
+            <p class="para2">ROOMS</p>
+            <div class="container10" >
+                <p class="para5">Lorem ipsum dolor sit amet consectetur</p>
+                <p>adipisicing elit. Error aspernatur</p>
+                <p>iste nisi velit eos gahsjsj zsamsnxcccc mndxn</p>
+                <button class="btn1">Learn More</button>
+            </div>
+        </div>
+        <div>
+            <img class="img2" src="img/img3.jpeg" alt="">
+            <p class="para2">DINNING</p>
+            <div class="container10">
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p>adipisicing elit. Error aspernatur</p>
+                <p>iste nisi velit eos gahsjsj zsamsnxcccc mndxn</p>
+                <button class="btn1">Learn More</button>
+
+            </div>
+        </div>
+        <div>
+            <img class="img2" src="img/img5.jpeg" alt="">
+            <p class="para2">POOLS</p>
+            <div class="container10">
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p>adipisicing elit. Error aspernatur</p>
+                <p>iste nisi velit eos gahsjsj zsamsnxcccc mndxn</p>
+                <button class="btn1">Learn More</button>
+
+            </div>
+        </div>
+        </div>
+
+        <!-- <div class="container9">
+            <img class="img2" src="img/img2.jpeg" alt="">
+            <img class="img3" src="img/img3.jpeg" alt="">
+            <img class="img4" src="img/img5.jpeg" alt="">
+
+        </div> -->
+        <!-- <p class="para2">ROOMS</p>
+        <p class="para3">DINNING</p>
+        <p class="para4">POOLS</p>
+
+        <div class="container10">
+            <p class="para5">Lorem ipsum dolor sit amet consectetur</p>
+            <p>adipisicing elit. Error aspernatur</p>
+            <p>iste nisi velit eos gahsjsj zsamsnxcccc mndxn</p>
+        </div>
+
+        <div class="container11">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>adipisicing elit. Error aspernatur</p>
+            <p>iste nisi velit eos gahsjsj zsamsnxcccc mndxn</p>
+        </div>
+        <div class="container12">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>adipisicing elit. Error aspernatur</p>
+            <p>iste nisi velit eos gahsjsj zsamsnxcccc mndxn</p>
+        </div>
+
+        <button class="btn1">Learn More</button>
+        <button class="btn2">Learn More</button>
+        <button class="btn3">Learn More</button> -->
+    </div>
+</body>
+
+</html>
